@@ -1,0 +1,20 @@
+{
+  "name": "flutter-string-extractor",
+  "version": "0.0.1",
+  "description": "Extracts strings from flutter project and maps them to a JSON file",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luigi Donadel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.12"
+  },
+  "dependencies": {
+    "glob": "^7.2.0",
+    "glob-promise": "^4.2.2",
+    "util": "^0.12.4"
+  }
+}

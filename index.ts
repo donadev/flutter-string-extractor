@@ -52,7 +52,7 @@ const saveJson = async (json : {[id:string] : string}, path : string) => {
 
 
 const start = async () => {
-    const folder : string = "/Users/donadev/Documents/Projects/AmmessoApp"//await question("Insert the main folder where to search for strings: ")
+    const folder : string = "/Users/donadev/Projects/MyFlutterApp"//await question("Insert the main folder where to search for strings: ")
     const extension : string = "dart"//await question("Insert the file extension without the dot: ")
     const output_path = "output.json"
     const strings = await stringsFromFolder(folder, extension)

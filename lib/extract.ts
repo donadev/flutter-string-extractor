@@ -6,7 +6,6 @@ export type OutputString = {
     value : string
     rawValue : string
     file : string
-    line : number
 }
 
 const NUMBER_REGEX = /^-?\d*\.?\d*$/
@@ -43,7 +42,7 @@ const extractStrings = async (file : string, extension : string): Promise<Output
     const doubleApex = DOUBLE_APEX_REGEX
     const strings = (content.match(doubleApex) || []).concat(content.match(APEX_REGEX) || [])
         .map((s : string) : OutputString => {
-            return {value: trimApex(s), rawValue: s, file: file, line: 0}
+            return {value: trimApex(s), rawValue: s, file: file}
         })
         .filter(s => filter(s.value, extension))
    // console.log(`Number of strings from ${file}: ${strings.length}`)

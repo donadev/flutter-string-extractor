@@ -9,11 +9,9 @@ const UPLOAD_URL = "https://localise.biz/api/import/json"
 type LocoResponse = { status : string, data : {message: string} }
 
 const upload = async (json : string, loco_api_key : string) => {
-    const url = `${UPLOAD_URL}?key=${loco_api_key}`
+    const url = `${UPLOAD_URL}?key=${loco_api_key}&locale=it_IT`
     try {
-        const form = new FormData()
-        form.append('data', json, 'strings.json');
-        const response : LocoResponse = await axios.post(url, {data: json})
+        const response : LocoResponse = await axios.post(url, json)
         console.log(`Upload finished (status=${response.status}): ${response.data.message}`)
     } catch(e) {
         console.log(`Upload finished with error ${e}`)

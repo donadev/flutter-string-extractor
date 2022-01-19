@@ -4,6 +4,7 @@ import 'dotenv/config'
 import extractor from './lib/extract';
 import { question } from './lib/util/utils';
 import uploader from './lib/upload';
+import replacer from './lib/replace';
 
 
 
@@ -19,6 +20,7 @@ const start = async () => {
     switch(mode) {
         case "extract": return await extractor(folder, extension, excluded_paths)
         case "upload": return await uploader(loco_api_key)
+        case "replace": return await replacer()
         default: return console.log("Not implemented yet")
     }
 }

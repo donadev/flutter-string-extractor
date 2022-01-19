@@ -20,7 +20,7 @@ const APEX_REGEX = /'.*?(?<!\\)'/g
 const DOUBLE_APEX_REGEX = /".*?(?<!\\)"/g
 
 export const OUTPUT_PATH = "output/edit_me.json"
-const OUTPUT_META_PATH = "output/meta.json"
+export const OUTPUT_META_PATH = "output/meta.json"
 
 const filter = (string : string, extension: string): boolean => {
     const formatted = extension.replace(".", "")

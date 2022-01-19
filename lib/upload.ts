@@ -1,7 +1,6 @@
 
 import axios from 'axios';
 import * as fs from 'fs/promises';
-import FormData = require('form-data');
 import { OUTPUT_PATH as INPUT_PATH } from "./extract";
 
 const UPLOAD_URL = "https://localise.biz/api/import/json"

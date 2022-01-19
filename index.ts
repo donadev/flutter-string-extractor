@@ -3,6 +3,7 @@ import 'dotenv/config'
 
 import extractor from './lib/extract';
 import { question } from './lib/util/utils';
+import uploader from './lib/upload';
 
 
 
@@ -17,6 +18,7 @@ const start = async () => {
     if(mode == "") mode = "extract"
     switch(mode) {
         case "extract": return await extractor(folder, extension, excluded_paths)
+        case "upload": return await uploader(loco_api_key)
         default: return console.log("Not implemented yet")
     }
 }

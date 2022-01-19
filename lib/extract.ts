@@ -19,7 +19,7 @@ const EXCLUDED_REGEXES = [NUMBER_REGEX, URL_REGEX, NON_ALPHANUMERICAL, CODE_PATH
 const APEX_REGEX = /'.*?(?<!\\)'/g
 const DOUBLE_APEX_REGEX = /".*?(?<!\\)"/g
 
-const OUTPUT_PATH = "output/edit_me.json"
+export const OUTPUT_PATH = "output/edit_me.json"
 const OUTPUT_META_PATH = "output/meta.json"
 
 const filter = (string : string, extension: string): boolean => {

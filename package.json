@@ -13,8 +13,10 @@
     "@types/node": "^16.11.12"
   },
   "dependencies": {
+    "@types/camelcase": "^5.2.0",
     "@types/got": "^9.6.12",
     "axios": "^0.25.0",
+    "camelcase": "^6.3.0",
     "dotenv": "^14.2.0",
     "form-data": "^2.5.1",
     "glob": "^7.2.0",

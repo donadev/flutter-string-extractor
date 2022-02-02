@@ -55,11 +55,11 @@ const stringsFromFolder = async (folder : string, extension : string, excluded_p
     return strings.flat()
 }
 const buildMetaJson = (strings : OutputString[]): {[id:string] : OutputString[]} => {
-    return strings.map((s: OutputString): {[id:string]: OutputString[]} => { 
-        const output : {[id:string]: OutputString[]} = {}
+    const output : {[id:string]: OutputString[]} = {}
+    strings.forEach((s: OutputString) => {
         output[s.value] = [s, ...(output[s.value] || [])]
-        return output
-    }).reduce((acc, v) => Object.assign({}, acc, v), {})
+    })
+    return output
 }
 const buildStringsJson = (strings : OutputString[]): {[id:string] : string} => {
     return strings.map((s: OutputString): {[id:string]: string} => { 

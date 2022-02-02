@@ -43,4 +43,4 @@ This code is open source software licensed under the Apache 2.0 License.
 
 Luigi Donadel - [@luigidonadel](https://twitter.com/luigidonadel) - luigi.donadel@gmail.com
 
-Project Link: [https://github.com/donadev/hashcode_starter](https://github.com/donadev/hashcode_starter)
+Project Link: [https://github.com/donadev/flutter-string-extractor](https://github.com/donadev/flutter-string-extractor)
